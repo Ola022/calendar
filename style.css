@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  /* min-height: 85vh; */
+  /* background-image: url('bg.png'); */
+  /* background: linear-gradient(to bottom right, #ff9900, #ff3366); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+.logo{
+  padding: 0 10px;
+  width: 60px;
+  height: 60px;
+}
+.containerr {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* columns: 2; */
+}
+.container-calendar{
+  height: 100vh; 
+  background-image: url('bg.png');
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.overlay{
+  min-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom left, #dff3fc83 ,  #00aeffaf);
+  background-size: cover;
+  display: inline-flex;
+}
+.column1 {
+  /* width: 55%; */
+  padding: 50px;
+  margin-left: 50px; 
+  /* justify-content: start; */
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+.column2 {
+  /* width: 45%; */
+  padding: 10px;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+.card-container {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  /* margin-left: 5px; */
+  /* padding: 20px; */
+}
+.project_topic{
+  margin-top: 40px;
+   padding: 20px 0; 
+   text-transform: uppercase; 
+   text-align: justify !important;
+  font-family: 'Courier New', Courier,monospace; 
+  font-size: 70px; 
+  letter-spacing: 2px; word-spacing: 2px;
+}
+.group{
+  padding: 1px 20px ; 
+  border-radius: 0px 10px 10px 0; 
+   background-color: #eeb600; 
+   width: 150px; color: whitesmoke;
+}
+
+.card{
+  padding: 40px 20px 20px;
+  align-self: center;   
+ margin: 100px 0 0;
+ box-shadow: 0 0 10px -1px #00aeffaf !important;
+ margin-bottom: 15px;
+ width: 28%;
+ background: #ffffffc0;
+border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%;
+  }
+  .group{
+    margin-top: 30px;
+     padding: 1px 10px ;
+      border-radius: 0px 10px 10px 0;  
+      background-color: #eeb600; 
+      width: 150px; color: whitesmoke;
+      font-size: 12px;
+  }
+  .column1 {
+    width: 100vw;
+    margin-left: 5px; 
+  }
+  .column2 {
+    display: none;
+  }
+  .project_topic{
+    margin-top: 10px;
+     padding: 10px 0; 
+     text-transform: uppercase; 
+     text-align: justify !important;
+    font-family: 'Courier New', Courier,monospace; 
+    font-size: 50px; 
+    /* letter-spacing: 1.5px; word-spacing: 1.5px; */
+  }
+  .card-container {
+    display: flex;
+  justify-content: center;
+  }
+  .card{
+     padding: 40px 20px 20px;
+     align-self: center;   
+    margin: 100px 0 0;
+    box-shadow: 0 0 10px -1px #00aeffaf !important;
+    margin-bottom: 15px;
+    width: 78%;
+    background: #ffffffc0;
+  border-radius: 10px;
+  }
+  .container-calendar{
+    height: 100%; 
+  background-image: url('bg.png');
+  /* background-size: cover; */
+  background-repeat: no-repeat; 
+  }
+}
+
+input[type=number],
+select {
+    width: 50% !important;
+    padding: 15px;
+    margin: 5px 0 2px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=number]:focus,
+select:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerbtn {
+    /* background-color: #00aeff; */
+    background-color: #e2a601;
+    color: white;
+    padding: 16px 20px;
+    /* margin: 0 auto; */
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.001); /* Set desired transparency value */
+  padding: 0px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin-top : 11px;
+  padding: 0;
+  display: flex;
+}
+.spacer{
+  margin: 0 auto;
+  /* width: 200px; */
+}
+.my-image{
+  /* height: 460px; */
+  width: 700px;
+}
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+main {
+  padding: 20px;
+}
+
+/* ******************* CALANDER CSS ******************** */
+#calendar {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+#calendar h2 {
+  text-align: center;
+}
+
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+}
+
+#calendar td {
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 5px -2px #00aeff83 !important;
+
+}
+
+#calendar td.empty {
+  background-color: #f2f2f2;
+}
+
+#calendar td:not(.empty):hover {
+  background-color: #e6e6e6;
+}
+
+#calendar td.today {
+  background-color: #a35a0c;
+}
+
+#calendar td.selected {
+  background-color: #ffb84d;
+  color: #fff;
+  font-weight: bold;
+}
